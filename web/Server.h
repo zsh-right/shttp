@@ -2,7 +2,6 @@
 
 #include <string>
 #include <functional>
-#include <memory>
 using namespace std;
 
 #include "utility/Singleton.h"
@@ -18,9 +17,9 @@ typedef std::function<void(const Request &, Response &)> server_handler;
 
 class Server
 {
-public:
     friend class Lazy_Singleton<Server>;
     friend class Hungry_Singleton<Server>;
+public:
     void listen(const string & ip, int port);
     void start();
 

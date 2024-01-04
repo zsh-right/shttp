@@ -7,23 +7,23 @@
 namespace yazi {
 namespace utility {
 
-enum class SingletonType {
-    HUNGRY,
+enum class SingletonType
+{
     LAZY,
+    HUNGRY,
     AUTO
 };
 
-template<typename T>
-class Singleton_Interface;
-
-template<typename T>
+template <typename T>
 class Lazy_Singleton;
 
-template<typename T>
+template <typename T>
 class Hungry_Singleton;
 
+template <typename T>
+class Auto_Singleton;
 
-template <typename T, SingletonType type = SingletonType::LAZY>
+template <typename T, SingletonType type = SingletonType::HUNGRY>
 class Singleton
 {
 public:
@@ -51,6 +51,9 @@ class Hungry_Singleton
 public:
     static T* instance()
     {
+        if (instance_ == NULL)
+            instance_ = new T();
+
         return instance_;
     }
 
@@ -63,7 +66,7 @@ private:
 };
 
 template <typename T>
-T* Hungry_Singleton<T>::instance_ = new T();
+T* Hungry_Singleton<T>::instance_ = nullptr;
 
 template <typename T>
 class Lazy_Singleton

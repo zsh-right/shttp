@@ -49,9 +49,9 @@ typedef Object * (*create_object)(void);
 
 class ClassFactory
 {
-public:
     friend class Lazy_Singleton<ClassFactory>;
     friend class Hungry_Singleton<ClassFactory>;
+public:
     // reflect class
     void register_class(const string & className, create_object method);
     Object * create_class(const string & className);
@@ -69,8 +69,8 @@ public:
     ClassMethod * get_class_method(const string & className, const string & methodName);
 
 private:
-    ClassFactory() = default;
-    ~ClassFactory() = default;
+    ClassFactory() {}
+    ~ClassFactory() {}
 
 private:
     std::map<string, create_object> m_classMap;
