@@ -1,7 +1,7 @@
 #pragma once
 
 #include <pthread.h>
-#include <thread/Mutex.h>
+#include "Mutex.h"
 
 namespace yazi {
 namespace thread {

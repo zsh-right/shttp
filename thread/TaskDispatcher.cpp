@@ -1,8 +1,8 @@
-#include <thread/TaskDispatcher.h>
+#include "TaskDispatcher.h"
 using namespace yazi::thread;
 
-#include <utility/Logger.h>
-#include <utility/Singleton.h>
+#include "utility/Logger.h"
+#include "utility/Singleton.h"
 using namespace yazi::utility;
 
 TaskDispatcher::TaskDispatcher()

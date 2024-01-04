@@ -1,6 +1,6 @@
 #pragma once
 
-#include <web/Controller.h>
+#include "web/Controller.h"
 using namespace yazi::web;
 
 namespace yazi {

@@ -1,5 +1,5 @@
-#include <thread/Task.h>
-#include <thread/AutoLock.h>
+#include "Task.h"
+#include "AutoLock.h"
 using namespace yazi::thread;
 
 Task::Task() : m_data(NULL)

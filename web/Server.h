@@ -5,11 +5,11 @@
 #include <memory>
 using namespace std;
 
-#include <utility/Singleton.h>
+#include "utility/Singleton.h"
 using namespace yazi::utility;
 
-#include <web/Request.h>
-#include <web/Response.h>
+#include "Request.h"
+#include "Response.h"
 
 namespace yazi {
 namespace web {

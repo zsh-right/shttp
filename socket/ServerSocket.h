@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-#include <socket/Socket.h>
+#include "Socket.h"
 
 namespace yazi {
 namespace socket {

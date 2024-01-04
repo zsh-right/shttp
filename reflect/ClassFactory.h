@@ -1,5 +1,9 @@
 #pragma once
 
+#include "utility/Singleton.h"
+#include "ClassField.h"
+#include "ClassMethod.h"
+
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -9,11 +13,7 @@
 #include <stdexcept>
 using namespace std;
 
-#include <utility/Singleton.h>
 using namespace yazi::utility;
-
-#include <reflect/ClassField.h>
-#include <reflect/ClassMethod.h>
 
 namespace yazi {
 namespace reflect {

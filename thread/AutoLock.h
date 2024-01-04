@@ -1,6 +1,6 @@
 #pragma once
 
-#include <thread/Mutex.h>
+#include "Mutex.h"
 
 namespace yazi {
 namespace thread {

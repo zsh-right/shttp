@@ -1,4 +1,4 @@
-#include <app/Index.h>
+#include "Index.h"
 using namespace yazi::app;
 
 REGISTER_CLASS(Index);

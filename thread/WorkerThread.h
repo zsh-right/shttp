@@ -2,7 +2,7 @@
 
 #include <pthread.h>
 #include <signal.h>
-#include <thread/Thread.h>
+#include "Thread.h"
 
 namespace yazi {
 namespace thread {

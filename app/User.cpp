@@ -1,4 +1,4 @@
-#include <app/User.h>
+#include "User.h"
 using namespace yazi::app;
 
 REGISTER_CLASS(User);

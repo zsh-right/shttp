@@ -1,9 +1,9 @@
 #pragma once
 
 #include <pthread.h>
-#include <thread/Mutex.h>
-#include <thread/Condition.h>
-#include <thread/Task.h>
+#include "Mutex.h"
+#include "Condition.h"
+#include "Task.h"
 
 namespace yazi {
 namespace thread {

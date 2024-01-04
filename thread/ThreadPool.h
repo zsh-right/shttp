@@ -1,11 +1,11 @@
 #pragma once
 
 #include <set>
-#include <thread/Thread.h>
-#include <thread/Mutex.h>
-#include <thread/AutoLock.h>
-#include <thread/Condition.h>
-#include <thread/Task.h>
+#include "Thread.h"
+#include "Mutex.h" 
+#include "AutoLock.h" 
+#include "Condition.h" 
+#include "Task.h"
 
 namespace yazi {
 namespace thread {

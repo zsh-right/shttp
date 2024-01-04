@@ -7,9 +7,9 @@ using namespace yazi::utility;
 #include <sys/types.h>
 #include <sys/resource.h>
 
-#include <utility/Logger.h>
-#include <utility/IniFile.h>
-#include <utility/Singleton.h>
+#include "Logger.h"
+#include "IniFile.h"
+#include "Singleton.h"
 using namespace yazi::utility;
 
 

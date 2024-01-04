@@ -1,10 +1,10 @@
-#include <thread/WorkerThread.h>
-#include <thread/Task.h>
-#include <thread/ThreadPool.h>
+#include "WorkerThread.h"
+#include "Task.h"
+#include "ThreadPool.h"
 using namespace yazi::thread;
 
-#include <utility/Logger.h>
-#include <utility/Singleton.h>
+#include "utility/Logger.h"
+#include "utility/Singleton.h"
 using namespace yazi::utility;
 
 WorkerThread::WorkerThread() : Thread()

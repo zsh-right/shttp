@@ -1,6 +1,6 @@
 #pragma once
 
-#include <reflect/ClassFactory.h>
+#include "ClassFactory.h"
 
 namespace yazi {
 namespace reflect {

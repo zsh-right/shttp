@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-#include <web/Server.h>
+#include "web/Server.h"
 using namespace yazi::web;
 
-#include <app/controllers.h>
+#include "app/controllers.h"
 
 void hello(const Request & req, Response & resp)
 {
@@ -27,7 +27,7 @@ void reply(const Request & req, Response & resp)
 
 int main()
 {
-    Server * server = Singleton<Server, SingletonType::HUNGRY>::instance();
+    Server* server = Singleton<Server, SingletonType::HUNGRY>::instance();
     server->listen("", 8080);
     server->bind("/hello", hello);
     server->bind("/reply", reply);

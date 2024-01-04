@@ -1,10 +1,11 @@
 #include <string.h>
 #include <stdexcept>
 #include <cstdlib>
-using namespace std;
 
-#include <json/Parser.h>
+#include "Parser.h"
+
 using namespace yazi::json;
+using namespace std;
 
 Parser::Parser() : m_idx(0)
 {

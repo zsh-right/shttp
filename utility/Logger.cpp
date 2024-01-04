@@ -1,5 +1,4 @@
-#include <utility/Logger.h>
-using namespace yazi::utility;
+#include "Logger.h"
 
 #include <time.h>
 #include <stdarg.h>
@@ -7,7 +6,8 @@ using namespace yazi::utility;
 #include <errno.h>
 #include <stdexcept>
 
-const char* Logger::s_level[LEVEL_COUNT] = 
+using namespace yazi::utility;
+const char* Logger::s_level[LEVEL_COUNT] =
 {
     "DEBUG",
     "INFO",

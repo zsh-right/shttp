@@ -3,9 +3,9 @@
 #include <pthread.h>
 #include <signal.h>
 #include <list>
-#include <thread/Thread.h>
-#include <thread/ThreadPool.h>
-#include <thread/Task.h>
+#include "Thread.h"
+#include "ThreadPool.h"
+#include "Task.h"
 
 namespace yazi {
 namespace thread {

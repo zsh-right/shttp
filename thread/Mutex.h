@@ -1,4 +1,6 @@
-#pragma once
+#ifndef THREAD_MUTEX_H
+#define THREAD_MUTEX_H
+
 #include <pthread.h>
 
 namespace yazi {
@@ -26,3 +28,5 @@ private:
 };
 
 }}
+#endif
+// vim: set et ts=4 sts=4 sw=4:
